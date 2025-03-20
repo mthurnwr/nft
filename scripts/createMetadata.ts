@@ -38,7 +38,7 @@ export async function createAndPinMetadata(
 ): Promise<string> {
     // Create metadata object
     const metadata: NFTMetadata = {
-        name: `${recipientName}'s NFT #${tokenId}`,
+        name: `${recipientName}`,
         description: "Infini Hack NFT",
         attributes: [
             {
