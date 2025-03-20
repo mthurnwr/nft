@@ -4,7 +4,7 @@ import * as dotenv from "dotenv";
 
 dotenv.config();
 
-const DEPLOYER_WALLET_PRIVATE_KEY = process.env.DEPLOYER_WALLET_PRIVATE_KEY || "0000000000000000000000000000000000000000000000000000000000000000";
+const DEPLOYER_WALLET_PRIVATE_KEY = process.env.PRIVATE_KEY_NFT || "0000000000000000000000000000000000000000000000000000000000000000";
 const config: HardhatUserConfig = {
   solidity: "0.8.28",
   paths: {
@@ -15,6 +15,9 @@ const config: HardhatUserConfig = {
   },
   etherscan: {
     apiKey: {
+      mainnet: process.env.ETHERSCAN_API_KEY || "",
+      sepolia: process.env.ETHERSCAN_API_KEY || "",
+      goerli: process.env.ETHERSCAN_API_KEY || "",
       arbitrumSepolia: process.env.ARBISCAN_API_KEY || "",
       bsc: process.env.BSCSCAN_API_KEY || "",
       bsc_test: process.env.BSCSCAN_API_KEY || ""
@@ -28,11 +31,29 @@ const config: HardhatUserConfig = {
           browserURL: "https://sepolia.arbiscan.io/"
         }
       },
+      {
+        network: "sepolia",
+        chainId: 11155111,
+        urls: {
+          apiURL: "https://api-sepolia.etherscan.io/api",
+          browserURL: "https://sepolia.etherscan.io/"
+        }
+      },
     ]
   },
   networks: {
     hardhat: {
       allowUnlimitedContractSize: true,
+    },
+    eth: {
+      url: "https://eth.blockrazor.xyz",
+      chainId: 1,
+      accounts: [DEPLOYER_WALLET_PRIVATE_KEY],
+    },
+    eth_sepolia: {
+      url: "https://1rpc.io/sepolia",
+      chainId: 11155111,
+      accounts: [DEPLOYER_WALLET_PRIVATE_KEY],
     },
     bsc: {
       url: "https://bsc-dataseed.binance.org/",

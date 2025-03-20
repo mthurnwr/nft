@@ -2,12 +2,12 @@ import { loadFixture } from "@nomicfoundation/hardhat-toolbox/network-helpers";
 import { expect } from "chai";
 import hre from "hardhat";
 
-describe("NFT", function () {
+describe("InfiniHack", function () {
     async function deployNFTFixture() {
         // Contracts are deployed using the first signer/account by default
         const [owner, otherAccount] = await hre.ethers.getSigners();
 
-        const NFT = await hre.ethers.getContractFactory("NFT");
+        const NFT = await hre.ethers.getContractFactory("InfiniHack");
         const nft = await NFT.deploy();
 
         return { nft, owner, otherAccount };

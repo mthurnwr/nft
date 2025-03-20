@@ -1,9 +1,16 @@
+# project files
+output/*
+documents/*
+config/*
+!config/*.example.json
+
 node_modules
 .env
 
 # Hardhat files
 /cache
 /artifacts
+/ignition/deployments
 
 # TypeChain files
 /typechain

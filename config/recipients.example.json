@@ -1,0 +1,12 @@
+[
+  {
+    "address": <RECIPIENT_WALLET_ADDRESS_1>,
+    "name": "Example 1",
+    "tokenId": 1
+  },
+  {
+    "address": <RECIPIENT_WALLET_ADDRESS_2>,
+    "name": "Example 2",
+    "tokenId": 2
+  }
+]
