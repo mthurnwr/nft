@@ -2,6 +2,7 @@
 output/*
 documents/*
 config/*
+!config/content.json
 !config/*.example.json
 
 node_modules
