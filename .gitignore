@@ -1,5 +1,5 @@
 # project files
-output/*
+# output/*
 documents/*
 config/*
 !config/content.json

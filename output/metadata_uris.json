@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Infini Hack 1",
+    "address": "0xc49b5e5B9DA66B9126c1a62e9761E6b2147DE3E1",
+    "tokenId": 1,
+    "metadataUri": "ipfs://QmaTaUUV4R8xcn3D3LqwWjP596Jq4qVJsR6EjgRhr4Lkyq",
+    "viewableLink": "https://ipfs.io/ipfs/QmaTaUUV4R8xcn3D3LqwWjP596Jq4qVJsR6EjgRhr4Lkyq"
+  },
+  {
+    "name": "Infini Hack 2",
+    "address": "0x3ac96134Fb0e42a52D33045AeE50b89790f05Ed0",
+    "tokenId": 2,
+    "metadataUri": "ipfs://Qmc3VufqGBYSCG23AZoEuLA1QTgyer73yDwAGsh6kUAweU",
+    "viewableLink": "https://ipfs.io/ipfs/Qmc3VufqGBYSCG23AZoEuLA1QTgyer73yDwAGsh6kUAweU"
+  },
+  {
+    "name": "Infini Hack 3",
+    "address": "0xfcC8Ad911976d752890f2140D9F4edd2c64a6e49",
+    "tokenId": 3,
+    "metadataUri": "ipfs://QmRfF4LKDkMR7ggEdFxHDbtLzyxA2LbSa1phawMNtYviYE",
+    "viewableLink": "https://ipfs.io/ipfs/QmRfF4LKDkMR7ggEdFxHDbtLzyxA2LbSa1phawMNtYviYE"
+  }
+]
