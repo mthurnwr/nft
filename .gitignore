@@ -1,6 +1,6 @@
 # project files
 # output/*
-documents/*
+# documents/*
 config/*
 !config/content.json
 !config/*.example.json
